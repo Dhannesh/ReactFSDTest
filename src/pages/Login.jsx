@@ -26,39 +26,41 @@ const Login = () => {
     }
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="inputElement">
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          placeholder="Name"
-          onChange={(e) => setName(e.target.value)}
-        />
-      </div>
-      <div className="inputElement">
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-      </div>
-      <div className="inputElement">
-        <label htmlFor="password">Name</label>
-        <input
-          type={isVisible ? "text" : "password"}
-          id="password"
-          placeholder="Password"
-          onChange={(e) => setPassword(e.target.value)}
-        />
-      </div>
-      <button type="button" onClick={() => setVisible(!isVisible)}>
-        Show Password
-      </button>
-      <button>Login</button>
-    </form>
+    <div className="container">
+      <form onSubmit={handleSubmit}>
+        <div className="inputElement">
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Name"
+            onChange={(e) => setName(e.target.value)}
+          />
+        </div>
+        <div className="inputElement">
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="inputElement">
+          <label htmlFor="password">Name</label>
+          <input
+            type={isVisible ? "text" : "password"}
+            id="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <button type="button" onClick={() => setVisible(!isVisible)}>
+          Show Password
+        </button>
+        <button id="loginButton">Login</button>
+      </form>
+    </div>
   );
 };
 export default Login;

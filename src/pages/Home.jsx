@@ -15,7 +15,7 @@ const Home = () => {
   };
   return (
     <>
-      <div className="container">
+      <div className="container-home">
         <h1>Blog post website</h1>
         <div className="login">
           {state == null ? (

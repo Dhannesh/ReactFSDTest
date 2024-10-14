@@ -4,8 +4,17 @@
   box-sizing: border-box;
 }
 body {
-  background-color: bisque;
+  background-color: white;
 }
+.container-home {
+  background-color: bisque;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 h1 {
   text-align: center;
   font-size: 3rem;
@@ -18,6 +27,9 @@ h1 {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+  height: 100vh;
+  width: 100vw;
 }
 .login {
   padding: 20px 10px;
@@ -27,16 +39,55 @@ h1 {
   background-color: greenyellow;
   width: 80vw;
 }
-form {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-}
-form 
 .searchPage {
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+form {
+  display: flex;
+  width: 40%;
+  flex-direction: column;
+  background-color: bisque;
+  border-radius: 8px;
+  padding: 20px 10px;
+}
+form .searchPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputElement {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.inputElement label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+form button {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: bold;
+  background-color: blueviolet;
+  color: white;
+}
+#loginButton {
+  width: 200px;
+  border-radius: 8px;
+  align-self: center;
+  background-color: azure;
+  color: black;
+}
+.inputElement input {
+  font-size: 1rem;
+  font-weight: bold;
+  height: 40px;
 }
 .home {
   padding: 20px;
@@ -73,7 +124,7 @@ form
 .item {
   padding: 10px;
   background-color: white;
-  border: 1px solid 888888;
+  border: 1px solid #888888;
   width: 400px;
   border-radius: 8px;
   margin-top: 10px;
