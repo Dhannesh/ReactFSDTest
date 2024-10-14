@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: bisque;
+}
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  text-transform: capitalize;
+  margin-top: 20px;
+  color: green;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.login {
+  padding: 20px 10px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: greenyellow;
+  width: 80vw;
+}
+form {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+form 
+.searchPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home {
+  padding: 20px;
+  width: 100%;
+  background-color: skyblue;
+  height: 20px;
+}
+.search {
+  margin-top: 20px;
+  display: flex;
+  padding: 20px 10px;
+  background-color: blue;
+  border-radius: 8px;
+  width: 80vw;
+  justify-content: center;
+}
+.search input {
+  height: 40px;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1.25rem;
+}
+.search button {
+  padding: 5px;
+  font-size: 1.25rem;
+  width: 100px;
+}
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.item {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid 888888;
+  width: 400px;
+  border-radius: 8px;
+  margin-top: 10px;
+  box-shadow: 2px 2px #888888;
+}
+.item a {
+  padding: 10px;
+}
